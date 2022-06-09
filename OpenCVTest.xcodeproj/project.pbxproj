@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A44EC08284DD65F00F789F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC07284DD65F00F789F7 /* AppDelegate.m */; };
+		9A44EC0B284DD65F00F789F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC0A284DD65F00F789F7 /* SceneDelegate.m */; };
+		9A44EC0E284DD65F00F789F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC0D284DD65F00F789F7 /* ViewController.m */; };
+		9A44EC11284DD65F00F789F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC0F284DD65F00F789F7 /* Main.storyboard */; };
+		9A44EC13284DD66000F789F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC12284DD66000F789F7 /* Assets.xcassets */; };
+		9A44EC16284DD66000F789F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC14284DD66000F789F7 /* LaunchScreen.storyboard */; };
+		9A44EC19284DD66000F789F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC18284DD66000F789F7 /* main.m */; };
+		9A44EC23284DD66000F789F7 /* OpenCVTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC22284DD66000F789F7 /* OpenCVTestTests.m */; };
+		9A44EC2D284DD66000F789F7 /* OpenCVTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC2C284DD66000F789F7 /* OpenCVTestUITests.m */; };
+		9A44EC2F284DD66000F789F7 /* OpenCVTestUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC2E284DD66000F789F7 /* OpenCVTestUITestsLaunchTests.m */; };
+		9A44EC3C284DD76700F789F7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC3B284DD76700F789F7 /* opencv2.framework */; };
+		9A44EC3F284DD78D00F789F7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC3E284DD78D00F789F7 /* libc++.tbd */; };
+		9A44EC41284DD79400F789F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC40284DD79400F789F7 /* AVFoundation.framework */; };
+		9A44EC43284DD79B00F789F7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC42284DD79B00F789F7 /* CoreImage.framework */; };
+		9A44EC45284DD7A100F789F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC44284DD7A100F789F7 /* CoreGraphics.framework */; };
+		9A44EC47284DD7A500F789F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC46284DD7A500F789F7 /* QuartzCore.framework */; };
+		9A44EC49284DD7AA00F789F7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC48284DD7AA00F789F7 /* Accelerate.framework */; };
+		9A44EC4B284DD7B100F789F7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC4A284DD7B100F789F7 /* CoreVideo.framework */; };
+		9A44EC4D284DD7B500F789F7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC4C284DD7B500F789F7 /* CoreMedia.framework */; };
+		9A44EC4F284DD7BA00F789F7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A44EC4E284DD7BA00F789F7 /* AssetsLibrary.framework */; };
+		9A44EC52284DD8E600F789F7 /* OpenCVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A44EC51284DD8E600F789F7 /* OpenCVUtils.mm */; };
+		9A44EC5C284DEFF400F789F7 /* target_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC55284DEFF400F789F7 /* target_1.png */; };
+		9A44EC5D284DEFF400F789F7 /* target_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC56284DEFF400F789F7 /* target_2.png */; };
+		9A44EC5E284DEFF400F789F7 /* target_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC57284DEFF400F789F7 /* target_4.png */; };
+		9A44EC5F284DEFF400F789F7 /* sample_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC58284DEFF400F789F7 /* sample_1.png */; };
+		9A44EC60284DEFF400F789F7 /* sample_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC59284DEFF400F789F7 /* sample_2.png */; };
+		9A44EC61284DEFF400F789F7 /* sample_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC5A284DEFF400F789F7 /* sample_3.png */; };
+		9A44EC62284DEFF400F789F7 /* target_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A44EC5B284DEFF400F789F7 /* target_3.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A44EC1F284DD66000F789F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A44EBFB284DD65F00F789F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A44EC02284DD65F00F789F7;
+			remoteInfo = OpenCVTest;
+		};
+		9A44EC29284DD66000F789F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A44EBFB284DD65F00F789F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A44EC02284DD65F00F789F7;
+			remoteInfo = OpenCVTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A44EC03284DD65F00F789F7 /* OpenCVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A44EC06284DD65F00F789F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A44EC07284DD65F00F789F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A44EC09284DD65F00F789F7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9A44EC0A284DD65F00F789F7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9A44EC0C284DD65F00F789F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9A44EC0D284DD65F00F789F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9A44EC10284DD65F00F789F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A44EC12284DD66000F789F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A44EC15284DD66000F789F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A44EC17284DD66000F789F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A44EC18284DD66000F789F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A44EC1E284DD66000F789F7 /* OpenCVTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A44EC22284DD66000F789F7 /* OpenCVTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestTests.m; sourceTree = "<group>"; };
+		9A44EC28284DD66000F789F7 /* OpenCVTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A44EC2C284DD66000F789F7 /* OpenCVTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestUITests.m; sourceTree = "<group>"; };
+		9A44EC2E284DD66000F789F7 /* OpenCVTestUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestUITestsLaunchTests.m; sourceTree = "<group>"; };
+		9A44EC3B284DD76700F789F7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		9A44EC3E284DD78D00F789F7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9A44EC40284DD79400F789F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9A44EC42284DD79B00F789F7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9A44EC44284DD7A100F789F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A44EC46284DD7A500F789F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9A44EC48284DD7AA00F789F7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9A44EC4A284DD7B100F789F7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9A44EC4C284DD7B500F789F7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9A44EC4E284DD7BA00F789F7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9A44EC50284DD8E100F789F7 /* OpenCVUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVUtils.h; sourceTree = "<group>"; };
+		9A44EC51284DD8E600F789F7 /* OpenCVUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVUtils.mm; sourceTree = "<group>"; };
+		9A44EC55284DEFF400F789F7 /* target_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = target_1.png; path = OpenCVTest/TestImgs/target_1.png; sourceTree = "<group>"; };
+		9A44EC56284DEFF400F789F7 /* target_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = target_2.png; path = OpenCVTest/TestImgs/target_2.png; sourceTree = "<group>"; };
+		9A44EC57284DEFF400F789F7 /* target_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = target_4.png; path = OpenCVTest/TestImgs/target_4.png; sourceTree = "<group>"; };
+		9A44EC58284DEFF400F789F7 /* sample_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample_1.png; path = OpenCVTest/TestImgs/sample_1.png; sourceTree = "<group>"; };
+		9A44EC59284DEFF400F789F7 /* sample_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample_2.png; path = OpenCVTest/TestImgs/sample_2.png; sourceTree = "<group>"; };
+		9A44EC5A284DEFF400F789F7 /* sample_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample_3.png; path = OpenCVTest/TestImgs/sample_3.png; sourceTree = "<group>"; };
+		9A44EC5B284DEFF400F789F7 /* target_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = target_3.png; path = OpenCVTest/TestImgs/target_3.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A44EC00284DD65F00F789F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A44EC4F284DD7BA00F789F7 /* AssetsLibrary.framework in Frameworks */,
+				9A44EC4D284DD7B500F789F7 /* CoreMedia.framework in Frameworks */,
+				9A44EC4B284DD7B100F789F7 /* CoreVideo.framework in Frameworks */,
+				9A44EC49284DD7AA00F789F7 /* Accelerate.framework in Frameworks */,
+				9A44EC47284DD7A500F789F7 /* QuartzCore.framework in Frameworks */,
+				9A44EC45284DD7A100F789F7 /* CoreGraphics.framework in Frameworks */,
+				9A44EC43284DD79B00F789F7 /* CoreImage.framework in Frameworks */,
+				9A44EC41284DD79400F789F7 /* AVFoundation.framework in Frameworks */,
+				9A44EC3F284DD78D00F789F7 /* libc++.tbd in Frameworks */,
+				9A44EC3C284DD76700F789F7 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A44EC1B284DD66000F789F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A44EC25284DD66000F789F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A44EBFA284DD65F00F789F7 = {
+			isa = PBXGroup;
+			children = (
+				9A44EC58284DEFF400F789F7 /* sample_1.png */,
+				9A44EC59284DEFF400F789F7 /* sample_2.png */,
+				9A44EC5A284DEFF400F789F7 /* sample_3.png */,
+				9A44EC55284DEFF400F789F7 /* target_1.png */,
+				9A44EC56284DEFF400F789F7 /* target_2.png */,
+				9A44EC5B284DEFF400F789F7 /* target_3.png */,
+				9A44EC57284DEFF400F789F7 /* target_4.png */,
+				9A44EC05284DD65F00F789F7 /* OpenCVTest */,
+				9A44EC21284DD66000F789F7 /* OpenCVTestTests */,
+				9A44EC2B284DD66000F789F7 /* OpenCVTestUITests */,
+				9A44EC04284DD65F00F789F7 /* Products */,
+				9A44EC3D284DD78D00F789F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A44EC04284DD65F00F789F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A44EC03284DD65F00F789F7 /* OpenCVTest.app */,
+				9A44EC1E284DD66000F789F7 /* OpenCVTestTests.xctest */,
+				9A44EC28284DD66000F789F7 /* OpenCVTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A44EC05284DD65F00F789F7 /* OpenCVTest */ = {
+			isa = PBXGroup;
+			children = (
+				9A44EC06284DD65F00F789F7 /* AppDelegate.h */,
+				9A44EC07284DD65F00F789F7 /* AppDelegate.m */,
+				9A44EC09284DD65F00F789F7 /* SceneDelegate.h */,
+				9A44EC0A284DD65F00F789F7 /* SceneDelegate.m */,
+				9A44EC0C284DD65F00F789F7 /* ViewController.h */,
+				9A44EC0D284DD65F00F789F7 /* ViewController.m */,
+				9A44EC50284DD8E100F789F7 /* OpenCVUtils.h */,
+				9A44EC51284DD8E600F789F7 /* OpenCVUtils.mm */,
+				9A44EC3B284DD76700F789F7 /* opencv2.framework */,
+				9A44EC0F284DD65F00F789F7 /* Main.storyboard */,
+				9A44EC12284DD66000F789F7 /* Assets.xcassets */,
+				9A44EC14284DD66000F789F7 /* LaunchScreen.storyboard */,
+				9A44EC17284DD66000F789F7 /* Info.plist */,
+				9A44EC18284DD66000F789F7 /* main.m */,
+			);
+			path = OpenCVTest;
+			sourceTree = "<group>";
+		};
+		9A44EC21284DD66000F789F7 /* OpenCVTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A44EC22284DD66000F789F7 /* OpenCVTestTests.m */,
+			);
+			path = OpenCVTestTests;
+			sourceTree = "<group>";
+		};
+		9A44EC2B284DD66000F789F7 /* OpenCVTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A44EC2C284DD66000F789F7 /* OpenCVTestUITests.m */,
+				9A44EC2E284DD66000F789F7 /* OpenCVTestUITestsLaunchTests.m */,
+			);
+			path = OpenCVTestUITests;
+			sourceTree = "<group>";
+		};
+		9A44EC3D284DD78D00F789F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A44EC4E284DD7BA00F789F7 /* AssetsLibrary.framework */,
+				9A44EC4C284DD7B500F789F7 /* CoreMedia.framework */,
+				9A44EC4A284DD7B100F789F7 /* CoreVideo.framework */,
+				9A44EC48284DD7AA00F789F7 /* Accelerate.framework */,
+				9A44EC46284DD7A500F789F7 /* QuartzCore.framework */,
+				9A44EC44284DD7A100F789F7 /* CoreGraphics.framework */,
+				9A44EC42284DD79B00F789F7 /* CoreImage.framework */,
+				9A44EC40284DD79400F789F7 /* AVFoundation.framework */,
+				9A44EC3E284DD78D00F789F7 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A44EC02284DD65F00F789F7 /* OpenCVTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A44EC32284DD66000F789F7 /* Build configuration list for PBXNativeTarget "OpenCVTest" */;
+			buildPhases = (
+				9A44EBFF284DD65F00F789F7 /* Sources */,
+				9A44EC00284DD65F00F789F7 /* Frameworks */,
+				9A44EC01284DD65F00F789F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVTest;
+			productName = OpenCVTest;
+			productReference = 9A44EC03284DD65F00F789F7 /* OpenCVTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A44EC1D284DD66000F789F7 /* OpenCVTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A44EC35284DD66000F789F7 /* Build configuration list for PBXNativeTarget "OpenCVTestTests" */;
+			buildPhases = (
+				9A44EC1A284DD66000F789F7 /* Sources */,
+				9A44EC1B284DD66000F789F7 /* Frameworks */,
+				9A44EC1C284DD66000F789F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A44EC20284DD66000F789F7 /* PBXTargetDependency */,
+			);
+			name = OpenCVTestTests;
+			productName = OpenCVTestTests;
+			productReference = 9A44EC1E284DD66000F789F7 /* OpenCVTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A44EC27284DD66000F789F7 /* OpenCVTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A44EC38284DD66000F789F7 /* Build configuration list for PBXNativeTarget "OpenCVTestUITests" */;
+			buildPhases = (
+				9A44EC24284DD66000F789F7 /* Sources */,
+				9A44EC25284DD66000F789F7 /* Frameworks */,
+				9A44EC26284DD66000F789F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A44EC2A284DD66000F789F7 /* PBXTargetDependency */,
+			);
+			name = OpenCVTestUITests;
+			productName = OpenCVTestUITests;
+			productReference = 9A44EC28284DD66000F789F7 /* OpenCVTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A44EBFB284DD65F00F789F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					9A44EC02284DD65F00F789F7 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					9A44EC1D284DD66000F789F7 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 9A44EC02284DD65F00F789F7;
+					};
+					9A44EC27284DD66000F789F7 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 9A44EC02284DD65F00F789F7;
+					};
+				};
+			};
+			buildConfigurationList = 9A44EBFE284DD65F00F789F7 /* Build configuration list for PBXProject "OpenCVTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A44EBFA284DD65F00F789F7;
+			productRefGroup = 9A44EC04284DD65F00F789F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A44EC02284DD65F00F789F7 /* OpenCVTest */,
+				9A44EC1D284DD66000F789F7 /* OpenCVTestTests */,
+				9A44EC27284DD66000F789F7 /* OpenCVTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A44EC01284DD65F00F789F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A44EC5C284DEFF400F789F7 /* target_1.png in Resources */,
+				9A44EC5D284DEFF400F789F7 /* target_2.png in Resources */,
+				9A44EC5E284DEFF400F789F7 /* target_4.png in Resources */,
+				9A44EC5F284DEFF400F789F7 /* sample_1.png in Resources */,
+				9A44EC60284DEFF400F789F7 /* sample_2.png in Resources */,
+				9A44EC61284DEFF400F789F7 /* sample_3.png in Resources */,
+				9A44EC62284DEFF400F789F7 /* target_3.png in Resources */,
+				9A44EC16284DD66000F789F7 /* LaunchScreen.storyboard in Resources */,
+				9A44EC13284DD66000F789F7 /* Assets.xcassets in Resources */,
+				9A44EC11284DD65F00F789F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A44EC1C284DD66000F789F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A44EC26284DD66000F789F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A44EBFF284DD65F00F789F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A44EC0E284DD65F00F789F7 /* ViewController.m in Sources */,
+				9A44EC08284DD65F00F789F7 /* AppDelegate.m in Sources */,
+				9A44EC19284DD66000F789F7 /* main.m in Sources */,
+				9A44EC0B284DD65F00F789F7 /* SceneDelegate.m in Sources */,
+				9A44EC52284DD8E600F789F7 /* OpenCVUtils.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A44EC1A284DD66000F789F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A44EC23284DD66000F789F7 /* OpenCVTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A44EC24284DD66000F789F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A44EC2D284DD66000F789F7 /* OpenCVTestUITests.m in Sources */,
+				9A44EC2F284DD66000F789F7 /* OpenCVTestUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A44EC20284DD66000F789F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A44EC02284DD65F00F789F7 /* OpenCVTest */;
+			targetProxy = 9A44EC1F284DD66000F789F7 /* PBXContainerItemProxy */;
+		};
+		9A44EC2A284DD66000F789F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A44EC02284DD65F00F789F7 /* OpenCVTest */;
+			targetProxy = 9A44EC29284DD66000F789F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A44EC0F284DD65F00F789F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A44EC10284DD65F00F789F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A44EC14284DD66000F789F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A44EC15284DD66000F789F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A44EC30284DD66000F789F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9A44EC31284DD66000F789F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A44EC33284DD66000F789F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development: Ziyun Ni (QNYH6FNJNW)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33783BJMWK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVTest",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCVTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvinnie.OpenCVTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = all_iOS_dev;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A44EC34284DD66000F789F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development: Ziyun Ni (QNYH6FNJNW)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33783BJMWK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVTest",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCVTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvinnie.OpenCVTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = all_iOS_dev;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A44EC36284DD66000F789F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvinnie.OpenCVTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVTest.app/OpenCVTest";
+			};
+			name = Debug;
+		};
+		9A44EC37284DD66000F789F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvinnie.OpenCVTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVTest.app/OpenCVTest";
+			};
+			name = Release;
+		};
+		9A44EC39284DD66000F789F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvinnie.OpenCVTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVTest;
+			};
+			name = Debug;
+		};
+		9A44EC3A284DD66000F789F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arvinnie.OpenCVTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A44EBFE284DD65F00F789F7 /* Build configuration list for PBXProject "OpenCVTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A44EC30284DD66000F789F7 /* Debug */,
+				9A44EC31284DD66000F789F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A44EC32284DD66000F789F7 /* Build configuration list for PBXNativeTarget "OpenCVTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A44EC33284DD66000F789F7 /* Debug */,
+				9A44EC34284DD66000F789F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A44EC35284DD66000F789F7 /* Build configuration list for PBXNativeTarget "OpenCVTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A44EC36284DD66000F789F7 /* Debug */,
+				9A44EC37284DD66000F789F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A44EC38284DD66000F789F7 /* Build configuration list for PBXNativeTarget "OpenCVTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A44EC39284DD66000F789F7 /* Debug */,
+				9A44EC3A284DD66000F789F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A44EBFB284DD65F00F789F7 /* Project object */;
+}
